@@ -37,11 +37,14 @@ module.exports = {
 
 ## usage
 
-```
+```bash
 # edit nginx
 # edit config in ./config.js
+
 $ npm i -g forever # install forever
+
 $ yarn # install package
+
 $ yarn start # forever start
 ```
 
