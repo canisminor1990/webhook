@@ -8,7 +8,7 @@ wekhook tool on server side with graphical interface, receive hook messages to r
 
 - [Demo](http://hook.canisminor.cc/)
 
-![Demo](https://github.com/canisminor1990/webhook/blob/master/demo.png?raw=true)
+<img style="box-shadow: 0 .25rem 1rem 0 rgba(0, 0, 0, .08)" src="https://github.com/canisminor1990/webhook/blob/master/demo.png?raw=true">
 
 ## config
 
@@ -41,3 +41,7 @@ $ npm i -g forever # install forever
 $ yarn # install package
 $ yarn start # forever start
 ```
+
+## Contact
+- **Author** - [Canis Minor](https://github.com/canisminor1990)
+- **Email** - <i@canisminor.cc>
