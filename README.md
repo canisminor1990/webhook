@@ -6,9 +6,11 @@ wekhook tool on server side with graphical interface, receive hook messages to r
 
 > Support: **Github / Coding**
 
-- [Demo](http://hook.canisminor.cc/)
+## Demo
 
-<img style="box-shadow: 0 .25rem 1rem 0 rgba(0, 0, 0, .08)" src="https://github.com/canisminor1990/webhook/blob/master/demo.png?raw=true">
+You can visit this [Demo Site](http://hook.canisminor.cc/)
+
+![](https://github.com/canisminor1990/webhook/blob/master/demo.png?raw=true)
 
 ## config
 
