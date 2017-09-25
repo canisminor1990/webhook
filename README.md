@@ -21,6 +21,8 @@ You can visit this [Demo Site](http://hook.canisminor.cc/)
 $ git clone git@github.com:canisminor1990/webhook.git
 ```
 
+<br/>
+
 **Edit `./config.js`**
 
 > Edit nginx to set receive domain
@@ -46,6 +48,8 @@ module.exports = {
 };
 ```
 
+<br/>
+
 
 **Setup:**
 
@@ -57,7 +61,9 @@ $ yarn # install package
 $ yarn start # forever start
 ```
 
-Debug:
+<br/>
+
+**Debug:**
 
 ```bash
 $ node index.js # debug with log
