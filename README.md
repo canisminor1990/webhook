@@ -12,7 +12,18 @@ You can visit this [Demo Site](http://hook.canisminor.cc/)
 
 ![](https://github.com/canisminor1990/webhook/blob/master/demo.png?raw=true)
 
-## Config
+
+## Usage
+
+**Clone repo:**
+
+```bash
+$ git clone git@github.com:canisminor1990/webhook.git
+```
+
+**Edit `./config.js`**
+
+> Edit nginx to set receive domain
 
 ```js
 const projects = {
@@ -35,27 +46,23 @@ module.exports = {
 };
 ```
 
-## Usage
-
-**Clone repo:**
-
-```bash
-$ git clone git@github.com:canisminor1990/webhook.git
-```
-
 
 **Setup:**
 
 ```bash
-# edit nginx
-# edit config in ./config.js
-
 $ npm i -g forever # install forever
 
 $ yarn # install package
 
 $ yarn start # forever start
 ```
+
+Debug:
+
+```bash
+$ node index.js # debug with log
+```
+
 
 ## Contact
 - **Author** - [Canis Minor](https://github.com/canisminor1990)
