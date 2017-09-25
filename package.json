@@ -1,7 +1,7 @@
 {
   "name": "webhook",
   "version": "1.0.0",
-  "main": "forever/index.json",
+  "main": "index.js",
   "repository": {
     "url": "git@github.com:canisminor1990/webhook.git",
     "type": "git"
