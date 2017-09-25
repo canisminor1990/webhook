@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport"
 	      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, minimal-ui">
-	<title>Webhook</title>
+	<title>Webhook - CanisMinor</title>
 	<link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
@@ -12,25 +12,27 @@
 	<meta name="apple-mobile-web-app-title" content="CanisMinor">
 	<meta name="application-name" content="CanisMinor">
 	<meta name="theme-color" content="#ffffff">
-	<link href="https://cdn.bootcss.com/normalize/7.0.0/normalize.min.css" rel="stylesheet">
-	<link href="https://cdn.bootcss.com/highlight.js/9.12.0/styles/monokai-sublime.min.css" rel="stylesheet">
+	<link href="/assets/normalize.min.css" rel="stylesheet">
+	<link href="/assets/monokai-sublime.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="/assets/index.css">
 </head>
 <body>
 <div class="header">
 	<h1>Webhook</h1>
-	<a href="https://canisminor.cc">Power by CanisMinor</a>
+	<a href="https://github.com/canisminor1990/webhook">Power by CanisMinor</a>
 </div>
 <div class="list">
 	<% log.forEach(function (item) { %>
 	<div class="card">
 		<div class="row">
 			<h2>Repo:<a href="<%= item.repo.url %>"><%= item.repo.name %></a></h2>
-			<div class="box">
-				<strong>Hook:</strong><%= item.project %>
-			</div>
-			<div class="box">
-				<strong>branch:</strong><%= item.branch %>
+			<div class="tag">
+				<div class="box">
+					<strong>Hook:</strong><%= item.project %>
+				</div>
+				<div class="box">
+					<strong>branch:</strong><%= item.branch %>
+				</div>
 			</div>
 		</div>
 		<div class="message">
@@ -53,7 +55,8 @@
 	</div>
 	<% }) %>
 </div>
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<div class="footer">Copyright © 2017 CanisMinor</div>
+<script src="/assets/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 </body>
 </html>
