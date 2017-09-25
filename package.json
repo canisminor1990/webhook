@@ -1,0 +1,22 @@
+{
+  "name": "webhook",
+  "version": "1.0.0",
+  "main": "forever/index.json",
+  "repository": {
+    "url": "git@github.com:canisminor1990/webhook.git",
+    "type": "git"
+  },
+  "scripts": {
+    "start": "forever start ./forever/index.json",
+    "stop": "forever stopall",
+    "restart": "forever restartall"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "~1.0.0",
+    "exec": "^0.2.1",
+    "express": "~3.4.7",
+    "fs-extra": "^4.0.2",
+    "path": "^0.12.7"
+  }
+}

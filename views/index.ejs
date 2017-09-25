@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, minimal-ui">
+	<title>Webhook</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+	<link rel="mask-icon" href="/assets/safari-pinned-tab.svg" color="#222222">
+	<meta name="apple-mobile-web-app-title" content="CanisMinor">
+	<meta name="application-name" content="CanisMinor">
+	<meta name="theme-color" content="#ffffff">
+	<link href="https://cdn.bootcss.com/normalize/7.0.0/normalize.min.css" rel="stylesheet">
+	<link href="https://cdn.bootcss.com/highlight.js/9.12.0/styles/monokai-sublime.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="/assets/index.css">
+</head>
+<body>
+<div class="header">
+	<h1>Webhook</h1>
+	<a href="https://canisminor.cc">Power by CanisMinor</a>
+</div>
+<div class="list">
+	<% log.forEach(function (item) { %>
+	<div class="card">
+		<div class="row">
+			<h2>Repo:<a href="<%= item.repo.url %>"><%= item.repo.name %></a></h2>
+			<div class="box">
+				<strong>Hook:</strong><%= item.project %>
+			</div>
+			<div class="box">
+				<strong>branch:</strong><%= item.branch %>
+			</div>
+		</div>
+		<div class="message">
+			<img src="<%= item.user.img %>">
+			<div class="pop">
+				<span><%= item.user.name %></span>
+				<p class="text"><%= item.message %></p>
+			</div>
+		</div>
+		<h3>Script</h3>
+		<pre><code class="bash"><%= item.scripts %></code></pre>
+		<h3>Result</h3>
+		<pre><code class="bash"><%= item.out %></code></pre>
+		<%
+			const date = new Date(item.time);
+			const time = [date.getHours(), date.getMinutes(), date.getSeconds()].join(":")
+			const day  = [date.getFullYear(), date.getMonth() + 1, date.getDay()].join(".")
+		%>
+		<div class="time"><%= day %> <%= time %></div>
+	</div>
+	<% }) %>
+</div>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>

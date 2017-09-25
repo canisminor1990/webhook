@@ -1,0 +1,10 @@
+[
+	{
+		"uid"           : "webhook",
+		"watch"         : true,
+		"append"        : true,
+		"watchDirectory": "/",
+		"watchIgnore"   : "/log.json",
+		"script"        : "/index.js"
+	}
+]
