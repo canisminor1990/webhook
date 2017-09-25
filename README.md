@@ -37,6 +37,15 @@ module.exports = {
 
 ## Usage
 
+**Clone repo:**
+
+```bash
+$ git clone git@github.com:canisminor1990/webhook.git
+```
+
+
+**Setup:**
+
 ```bash
 # edit nginx
 # edit config in ./config.js
