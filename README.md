@@ -6,15 +6,30 @@ wekhook tool on server side with graphical interface, receive hook messages to r
 
 > Support: **Github / Coding**
 
-- [Demo](http://hook.canisminor.cc/)
+## Demo
 
-<img style="box-shadow: 0 .25rem 1rem 0 rgba(0, 0, 0, .08)" src="https://github.com/canisminor1990/webhook/blob/master/demo.png?raw=true">
+You can visit this [Demo Site](http://hook.canisminor.cc/)
 
-## config
+![](https://github.com/canisminor1990/webhook/blob/master/demo.png?raw=true)
+
+
+## Usage
+
+**Clone repo:**
+
+```bash
+$ git clone git@github.com:canisminor1990/webhook.git
+```
+
+<br/>
+
+**Edit `./config.js`**
+
+> Edit nginx to set receive domain
 
 ```js
 const projects = {
-	example: { // http://hook.xxxx.xxx/example -> example
+	example: { // location pathname -> http://hook.xxxx.xxx/example
 		type   : 'github',  // github || coding
 		message: false, // false || commit message
 		branch : 'master', // allowed branch
@@ -33,15 +48,27 @@ module.exports = {
 };
 ```
 
-## usage
+<br/>
 
-```
-# edit nginx
-# edit config in ./config.js
+
+**Setup:**
+
+```bash
 $ npm i -g forever # install forever
+
 $ yarn # install package
+
 $ yarn start # forever start
 ```
+
+<br/>
+
+**Debug:**
+
+```bash
+$ node index.js # debug with log
+```
+
 
 ## Contact
 - **Author** - [Canis Minor](https://github.com/canisminor1990)
