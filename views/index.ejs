@@ -36,6 +36,11 @@
 			</div>
 		</div>
 		<div class="message">
+			<%
+				if (item.user.img.indexOf('/fruit_avatar/') !== -1) {
+					item.user.img = 'https://coding.net' + item.user.img
+				}
+			%>
 			<img src="<%= item.user.img %>">
 			<div class="pop">
 				<span><%= item.user.name %></span>
