@@ -12,7 +12,7 @@ You can visit this [Demo Site](http://hook.canisminor.cc/)
 
 ![](https://github.com/canisminor1990/webhook/blob/master/demo.png?raw=true)
 
-## config
+## Config
 
 ```js
 const projects = {
@@ -35,7 +35,7 @@ module.exports = {
 };
 ```
 
-## usage
+## Usage
 
 ```bash
 # edit nginx
