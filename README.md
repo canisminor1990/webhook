@@ -28,6 +28,7 @@ module.exports = {
 	port     : 8888, // port to listen
 	maxLength: 50, // max messages to store
 	logPath  : 'log.json', // log path
+	commandConnect: '&&', // fish shell change this to ";"
 	projects : projects
 };
 ```

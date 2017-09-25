@@ -16,8 +16,9 @@ const projects = {
 };
 
 module.exports = {
-	port     : 8888,
-	maxLength: 50,
-	logPath  : 'log.json',
-	projects : projects
+	port          : 8888,
+	maxLength     : 50,
+	logPath       : 'log.json',
+	projects      : projects,
+	commandConnect: '&&'
 };

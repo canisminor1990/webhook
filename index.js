@@ -94,8 +94,8 @@ app.post(/.*/, (req, res) => {
 			// bash
 			const scripts = [
 				`cd ${ProjectConfig.dir}`,
-				ProjectConfig.bash.join('; ')
-			].join('; ');
+				ProjectConfig.bash.join(config.commandConnect)
+			].join(config.commandConnect);
 
 			exec(scripts, (err, out) => {
 				const OutLog = [out, err].join('\n');
