@@ -16,7 +16,7 @@ You can visit this [Demo Site](http://hook.canisminor.cc/)
 
 ```js
 const projects = {
-	example: { // http://hook.xxxx.xxx/example -> example
+	example: { // location pathname -> http://hook.xxxx.xxx/example
 		type   : 'github',  // github || coding
 		message: false, // false || commit message
 		branch : 'master', // allowed branch
